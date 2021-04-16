@@ -1,15 +1,24 @@
 #include <iostream>
+#include <cmath>
 using namespace std;
-
-//This program prompts user to enter circle raduis
-//Then the circle area is displayed
 
 int main()
 {
-	double radius;
-	cout << "Enter radius\n";
-	//Add code to read user input and store in variable radius
-	cout << "The area of a circle with radius \n";
-	//Calculate the area of the circle
+	//Allocate memory for variables
+	float a, b, area;
+
+	//Read in a, b, and area (prompt the user to input information)
+	cout << "Input the value of a: ";
+	cin >> a;
+
+	cout << "Input the value of b: ";
+	cin >> b;
+
+	//Compute the area
+	area = 3.14159 * a * b;
+
+	//Display the area
+	cout << "The area of the Ellipse is -->> " << area;
+
 	return 0;
 }
